@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Wab Site</title>
+    <link>https://xuwab.github.io/posts/</link>
+    <description>Recent content in Posts on Wab Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Apr 2020 19:21:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://xuwab.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create Personal Blog</title>
+      <link>https://xuwab.github.io/posts/creat_personal_blog/</link>
+      <pubDate>Mon, 13 Apr 2020 19:21:23 +0800</pubDate>
+      
+      <guid>https://xuwab.github.io/posts/creat_personal_blog/</guid>
+      <description>How to create a personal blog with hugo Open home page of Hugo : A blog generator by go language
+press &amp;lsquo;Quick start&amp;rsquo; button to create!
+Step 1: Install Hugo brew install hugo Step 2: Create a New Site Create the directory to init your blog.If your want to build based github,you need call the directory name as &amp;lsquo;username.github.io&amp;rsquo;.
+hugo new site username.github.io Step 3: Add a Theme &amp;lsquo;cd&amp;rsquo; into blog directory</description>
+    </item>
+    
+  </channel>
+</rss>
