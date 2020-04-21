@@ -6,10 +6,26 @@
     <description>Recent content on Wab Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Apr 2020 19:21:23 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2020 23:12:01 +0800</lastBuildDate>
     
 	<atom:link href="https://xuwab.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML入门笔记1</title>
+      <link>https://xuwab.github.io/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Tue, 21 Apr 2020 23:12:01 +0800</pubDate>
+      
+      <guid>https://xuwab.github.io/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <description>HTML简介和简单标签的使用 简介 HTML 是谁发明的？ HTML 是 Tim Berners-Lee 在1990年左右发明的，他的贡献：
+ 发明了第一个浏览器 发明了第一个服务器 用自己的浏览器访问自己的服务器 发明了 WWWW ，同时发明了 HTML 、 HTTP 和 URL  HTML 起手应该写什么？ 代码如下：
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge,chrome=1&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;   &amp;lt;!DOCTYPE html&amp;gt;
+这是标记文档类型
+  &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+html 标签，可以把 lang = en 改成 lang = zh-CN 。注意，zh-CN 不要写成 zh ，因为不同国家的中文有不同的语言类型。
+  &amp;lt;head&amp;gt;
+  &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;</description>
+    </item>
     
     <item>
       <title>Create Personal Blog</title>
