@@ -6,10 +6,26 @@
     <description>Recent content on Wab Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2020 23:12:01 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2020 21:38:00 +0800</lastBuildDate>
     
 	<atom:link href="https://xuwab.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML常用标签</title>
+      <link>https://xuwab.github.io/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Sun, 26 Apr 2020 21:38:00 +0800</pubDate>
+      
+      <guid>https://xuwab.github.io/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>这篇主要介绍 a 标签、img 标签和 table 标签的用法。
+关于a 标签 属性 1、href（hyper reference） 用来表示超链接，使用类型有：
+网址  https://google.com http://google.com //google.com  路径  /a/index.html index.html  伪协议  javascript:; mailto:邮箱 tel:手机号  id 例如：href=#xxx
+2、target 表示目标窗口：
+ _blank （新窗口） _top _parent _self（default）  窗口命名：
+ window的name  例如：自定义一个target=&amp;quot;xxx&amp;quot; 会寻找xxx窗口并打开，没有就新建窗口，命名为xxx。
+ iframe的name  3、download 4、rel=noopener 代码如下：
+&amp;lt;a href=&amp;#34;https://www.baidu.com&amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;超链接&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;/a/index.html&amp;#34;&amp;gt;访问a.html&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;index2.html&amp;#34;&amp;gt;访问index2.html&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;javascript:alert(1)&amp;#34;&amp;gt;空链接&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;mailto:707187137@qq.com&amp;#34;&amp;gt;发邮件&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;tel:10086&amp;#34;&amp;gt;打电话&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;#xxx&amp;#34;&amp;gt;id&amp;lt;/a&amp;gt; 作用  跳转外部页面 跳转内部锚点 跳转到邮箱、电话  关于img 标签 作用 发出 get请求 展示一张图片</description>
+    </item>
     
     <item>
       <title>HTML入门笔记1</title>
