@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://xuwab.github.io/" />
-<meta property="og:updated_time" content="2020-04-26T21:38:00+08:00" />
+<meta property="og:updated_time" content="2020-05-24T00:20:57+08:00" />
 <meta itemprop="name" content="Wab Site">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Wab Site"/>
@@ -122,6 +122,40 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://xuwab.github.io/posts/css%E7%9F%A5%E8%AF%86%E7%AF%87/" class="color-inherit dim link">
+            CSS知识篇
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          这篇主要介绍浏览器的渲染原理和CSS动画。
+浏览器渲染原理 渲染树构建、布局及绘制 整个过程可以概括为根据 HTML 和 CSS 输入构建了 DOM 树和 CSSOM 树，再将CSSOM 树和 DOM 树合并成渲染树，然后用于计算每个可见元素的布局，并输出给绘制流程，将像素渲染到屏幕上。
+简要概述了浏览器完成的步骤：
+ 处理 HTML 标记并构建 DOM 树。 处理 CSS 标记并构建 CSSOM 树。 将 DOM 与 CSSOM 合并成一个渲染树。 根据渲染树来Layout布局（文档流、盒模型、计算大小和位置），以计算每个节点的几何信息。 Paint绘制（把边框颜色、文字颜色、阴影等画出来）。 Compose合成（根据层叠关系展示画面）到屏幕上。  关于DOM 和 CSSOM 合并成一个“渲染树”，浏览器大体上完成了下列工作：   从 DOM 树的根节点开始遍历每个可见节点。
+  某些节点不可见（例如脚本标记、元标记等），因为它们不会体现在渲染输出中，所以会被忽略。
+   某些节点通过 CSS 隐藏，因此在渲染树中也会被忽略。 对于每个可见节点，为其找到适配的 CSSOM 规则并应用它们。  发射可见节点，连同其内容和计算的样式。  关于“布局”阶段 合并成一个“渲染树”的过程是计算了哪些节点应该是可见的以及它们的计算样式，但我们尚未计算它们在设备视口内的确切位置和大小&mdash;这就是“布局”阶段，也称为“自动重排”。
+布局流程的输出是一个“盒模型”，它会精确地捕获每个元素在视口内的确切位置和尺寸：所有相对测量值都转换为屏幕上的绝对像素。
+关于“绘制”阶段 将渲染树中的每个节点转换成屏幕上的实际像素。这一步通常称为“绘制”或“栅格化”。
+执行渲染树构建、布局和绘制所需的时间将取决于文档大小、应用的样式，以及运行文档的设备：文档越大，浏览器需要完成的工作就越多；样式越复杂，绘制需要的时间就越长（例如，单色的绘制开销“较小”，而阴影的计算和渲染开销则要“大得多”）。
+注意点：
+ visibility: hidden 与 display: none 是不一样的。前者隐藏元素，但元素仍占据着布局空间（即将其渲染成一个空框），而后者 (display: none) 将元素从渲染树中完全移除，元素既不可见，也不是布局的组成部分。 渲染树只包含渲染网页所需的节点。 布局更新样式包含布局、绘制、合成，布局和绘制有可能被忽略。  CSS 动画 主要方式有三种：
+        </div>
+          <a href="https://xuwab.github.io/posts/css%E7%9F%A5%E8%AF%86%E7%AF%87/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://xuwab.github.io/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="color-inherit dim link">
             HTML常用标签
             </a>
@@ -176,35 +210,25 @@ html 标签，可以把 lang = en 改成 lang = zh-CN 。注意，zh-CN 不要�
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://xuwab.github.io/posts/creat_personal_blog/" class="color-inherit dim link">
-            Create Personal Blog
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          How to create a personal blog with hugo Open home page of Hugo : A blog generator by go language
-press &lsquo;Quick start&rsquo; button to create!
-Step 1: Install Hugo brew install hugo Step 2: Create a New Site Create the directory to init your blog.If your want to build based github,you need call the directory name as &lsquo;username.github.io&rsquo;.
-hugo new site username.github.io Step 3: Add a Theme &lsquo;cd&rsquo; into blog directory
-        </div>
-          <a href="https://xuwab.github.io/posts/creat_personal_blog/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
+      
+      <section class="w-100">
+        <h1 class="f3">More</h1>
+        
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://xuwab.github.io/posts/creat_personal_blog/" class="link black dim">
+              Create Personal Blog
+            </a>
+          </h2>
+        
+
+        
+        
+          <a href="https://xuwab.github.io/posts/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Posts</a>
+        
+        </section>
       
 
       </div>
