@@ -6,10 +6,32 @@
     <description>Recent content on Wab Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2020 00:20:57 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2020 01:11:43 +0800</lastBuildDate>
     
 	<atom:link href="https://xuwab.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Simple_url</title>
+      <link>https://xuwab.github.io/posts/simple_url/</link>
+      <pubDate>Sat, 27 Jun 2020 01:11:43 +0800</pubDate>
+      
+      <guid>https://xuwab.github.io/posts/simple_url/</guid>
+      <description>URL的简单基础知识 URL 包含哪几部分 URL 全称是Union Resource Location，包括了：
+ 协议 域名 端口 路径 查询参数 锚点  协议 网络协议是通信计算机双方必须共同遵从的一组约定，常用的有TCP/IP，基于此封装的上层协议有HTTP/HTTPS
+域名 IP的别称
+端口 一台机器提供的不同服务
+路径 访问资源在服务器的地址路径
+查询参数 访问资源的自定义选择参数
+锚点 前端显示的资源定位，不传给服务器
+DNS DNS 全称是Domain Name Server，域名解析服务，使用 nslookup 命令可以查到DNS记录的生存时间还可以指定使用哪个DNS服务器进行解释
+IP 功能是
+ 定位一台设备 封装数据报文，跟其他设备交流  域名 IP与域名的关系   一个域名可以对应不同的IP
+负载均衡，防止一台机器扛不住
+  一个IP可以对应不同域名
+共享主机，资源不足才这么使用
+  加了www的域名 www.域名和域名不是同一个域名，比如：com是顶级域名，域名.com是一级域名，www.域名.com 二级域名</description>
+    </item>
     
     <item>
       <title>CSS知识篇</title>
