@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div id="canvas"></div> -->
+
+    <canvas id="canvas"> </canvas>
+
+    <script>
+      //   canvas.onmousemove = (e) => {
+      //     console.log(e);
+      //     console.log(e.clientX);
+      //     console.log(e.clientY);
+
+      //     let div = document.createElement('div');
+      //     div.style.position = 'absolute'
+      //     div.style.left = e.clientX + 'px'
+      //     div.style.top = e.clientY + 'px'
+      //     div.style.width = '6px'
+      //     div.style.height = '6px'
+      //     div.style.marginLeft = '-3px'
+      //     div.style.marginTop = '-3px'
+      //     div.style.borderRadius = '50%'
+      //     div.style.backgroundColor = 'black'
+      //     canvas.appendChild(div)
+      //   };
+
+      let canvas = document.getElementById("canvas");
+
+      canvas.width = document.documentElement.clientWidth;
+      canvas.height = document.documentElement.clientHeight;
+
+      var ctx = canvas.getContext("2d");
+
+      ctx.fillStyle = "black";
+      ctx.strokeStyle = "none";
+      ctx.lineWidth = 10;
+      ctx.lineCap = 'round';
+
+      let painting = false;
+
+      var isTouchDevice = "ontouchstart" in document.documentElement;
+      console.log(isTouchDevice);
+
+      let lastPoint;
+
+      if (isTouchDevice) {
+        canvas.ontouchstart = (e) => {
+            lastPoint = [e.touches[0].clientX, e.touches[0].clientY];
+        }
+        canvas.ontouchmove = (e) => {
+          //   if (painting) {
+          //   ctx.fillRect(e.clientX - 3, e.clientY - 3, 6, 6);
+        //   ctx.beginPath();
+        //   ctx.arc(
+        //     e.touches[0].clientX,
+        //     e.touches[0].clientY,
+        //     10,
+        //     0,
+        //     2 * Math.PI
+        //   );
+        //   ctx.stroke();
+        //   ctx.fill();
+          //   } else {
+          //     //empty
+          //   }
+
+          console.log(lastPoint);
+            drawLine(lastPoint[0], lastPoint[1], e.touches[0].clientX, e.touches[0].clientY);
+            lastPoint = [e.touches[0].clientX, e.touches[0].clientY];
+        };
+      } else {
+        canvas.onmousedown = (e) => {
+          painting = true;
+          console.log(e);
+          lastPoint = [e.clientX, e.clientY];
+          console.log(lastPoint);
+        };
+
+        console.log(canvas.ontouchmove);
+
+        canvas.onmousemove = (e) => {
+          if (painting) {
+            // console.log(e);
+            // console.log(e.clientX);
+            // console.log(e.clientY);
+
+            // //   ctx.fillRect(e.clientX - 3, e.clientY - 3, 6, 6);
+            // ctx.beginPath();
+            // ctx.arc(e.clientX, e.clientY, 10, 0, 2 * Math.PI);
+            // ctx.stroke();
+            // ctx.fill();
+            console.log(lastPoint);
+            drawLine(lastPoint[0], lastPoint[1], e.clientX, e.clientY);
+            lastPoint = [e.clientX, e.clientY];
+          } else {
+            //empty
+          }
+        };
+
+        canvas.onmouseup = () => {
+          painting = false;
+        };
+      }
+      function drawLine(x1, y1, x2, y2) {
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+      }
+    </script>
+  </body>
+</html>
